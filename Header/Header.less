@@ -9,9 +9,21 @@
   position: fixed;
   top: 0;
   z-index: 2;
+  transition: background-color 3s; 
+  :hover {
+    background-color: salmon; 
+  }
+  
 
   h1 {
     margin: 0;
     font-size: 48px;
+    animation: pulse 5s infinite;
+    transform: scale(1.5); 
+    
+  }
+  @keyframes pulse {
+    0%{color: white}; 
+    100%{color: blue}; 
   }
 }
